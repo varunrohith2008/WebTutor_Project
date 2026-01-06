@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTutor - Master Web Development</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        dark: {
+                            bg: '#0f172a',
+                            panel: '#1e293b',
+                            border: '#334155'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+
+<body
+    class="bg-slate-50 text-slate-900 dark:bg-dark-bg dark:text-slate-100 transition-colors duration-300 h-screen overflow-hidden flex flex-col">
+
+    <!-- Header -->
+    <header id="app-header" class="h-16 z-50 glass-header flex items-center justify-between px-6 sticky top-0 w-full">
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex flex-1 overflow-hidden relative">
+
+        <!-- Sidebar Navigation -->
+        <aside id="app-sidebar"
+            class="w-72 hidden md:flex flex-col border-r border-slate-200 dark:border-dark-border bg-white/50 dark:bg-dark-panel/30 overflow-y-auto custom-scrollbar transition-transform h-full">
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-content"
+            class="flex-1 overflow-y-auto custom-scrollbar relative bg-slate-50 dark:bg-dark-bg p-0">
+            <!-- Dynamic Views will be injected here -->
+            <div id="router-outlet" class="min-h-full"></div>
+        </main>
+
+    </div>
+
+    <!-- Modals Layer -->
+    <div id="modal-layer" class="relative z-[60] pointer-events-none"></div>
+
+    <!-- Toast Layer -->
+    <div id="toast-layer" class="fixed bottom-6 right-6 z-[70] flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Scripts -->
+    <script src="./scripts/data.js"></script>
+    <!-- Components -->
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/components/header.js"></script>
+    <script src="./scripts/components/sidebar.js"></script>
+    <script src="./scripts/components/lessonView.js"></script>
+    <script src="./scripts/components/dashboard.js"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+
+</html>
