@@ -44,6 +44,11 @@ window.HeaderComponent = {
                    <span class="hidden dark:block">☀️</span>
                 </button>
 
+                <!-- Help / Welcome -->
+                <button class="p-2 text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-dark-border rounded-full transition-colors" onclick="App.showWelcomeModal()" title="Show Welcome">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </button>
+
                 <!-- Profile Badge -->
                 <div class="flex items-center gap-3 pl-4 border-l border-slate-200 dark:border-dark-border">
                     <div class="text-right hidden sm:block">

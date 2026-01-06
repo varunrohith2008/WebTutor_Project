@@ -36,9 +36,10 @@ window.App = {
 
         // Check for Welcome Modal
         setTimeout(() => {
-            if (!localStorage.getItem('webtutor_welcome_seen')) {
-                this.showWelcomeModal();
-            }
+            // Debug: Always show welcome for verification
+            // if (!localStorage.getItem('webtutor_welcome_seen')) {
+            this.showWelcomeModal();
+            // }
         }, 1000);
     },
 
