@@ -21,7 +21,7 @@ window.DashboardComponent = {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
                 
                 <!-- Welcome Banner -->
-                <div class="bg-gradient-to-r from-brand-600 to-indigo-600 rounded-3xl p-8 text-white shadow-xl mb-10 relative overflow-hidden">
+                <div class="bg-gradient-to-r from-brand-600 to-teal-800 rounded-3xl p-8 text-white shadow-xl mb-10 relative overflow-hidden card-hover">
                     <div class="relative z-10">
                         <h2 class="text-3xl font-bold mb-2">Welcome back, ${user.username}! 👋</h2>
                         <p class="text-brand-100 text-lg mb-6">You're on a ${user.streak} day streak. Keep it up!</p>
@@ -38,7 +38,7 @@ window.DashboardComponent = {
                 <!-- Stats Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                     <!-- Progress Card -->
-                    <div class="bg-white dark:bg-dark-panel p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border">
+                    <div class="bg-white dark:bg-dark-panel p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border card-hover">
                         <h3 class="text-slate-500 dark:text-slate-400 font-medium text-sm uppercase tracking-wide mb-4">Overall Progress</h3>
                         <div class="flex items-end justify-between mb-2">
                             <span class="text-4xl font-bold text-slate-900 dark:text-white">${percent}%</span>
@@ -50,7 +50,7 @@ window.DashboardComponent = {
                     </div>
 
                     <!-- XP Card -->
-                    <div class="bg-white dark:bg-dark-panel p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border">
+                    <div class="bg-white dark:bg-dark-panel p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border card-hover">
                         <h3 class="text-slate-500 dark:text-slate-400 font-medium text-sm uppercase tracking-wide mb-4">Total XP</h3>
                         <div class="flex items-center gap-4">
                             <div class="p-3 bg-brand-50 dark:bg-brand-900/30 rounded-xl">
@@ -64,7 +64,7 @@ window.DashboardComponent = {
                     </div>
 
                     <!-- Certificates (Mock) -->
-                     <div class="bg-white dark:bg-dark-panel p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border">
+                     <div class="bg-white dark:bg-dark-panel p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border card-hover">
                         <h3 class="text-slate-500 dark:text-slate-400 font-medium text-sm uppercase tracking-wide mb-4">Certificates</h3>
                         <div class="flex items-center justify-between opacity-50">
                             <span class="text-sm text-slate-500">No certificates yet</span>
@@ -77,7 +77,7 @@ window.DashboardComponent = {
                 </div>
 
                 <!-- Badges & Achievements -->
-                <div class="bg-white dark:bg-dark-panel rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border p-8">
+                <div class="bg-white dark:bg-dark-panel rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border p-8 card-hover">
                     <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Achievements</h3>
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
                         ${badges.map(badge => `

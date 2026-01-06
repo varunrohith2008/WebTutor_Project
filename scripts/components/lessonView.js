@@ -32,13 +32,13 @@ window.LessonViewComponent = {
                     <div class="overflow-y-auto custom-scrollbar pr-2 space-y-8 flex flex-col">
                         
                         <!-- Explanation Card -->
-                        <div class="bg-white dark:bg-dark-panel rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border p-6 prose dark:prose-invert max-w-none hover:shadow-md transition-shadow">
+                        <div class="bg-white dark:bg-dark-panel rounded-2xl shadow-sm border border-slate-200 dark:border-dark-border p-6 prose dark:prose-invert max-w-none card-hover">
                             ${module.content?.explanation || '<p class="text-slate-500 italic">Content coming soon...</p>'}
                         </div>
 
                          <!-- Action Footer -->
                         <div class="mt-auto pt-8 pb-20">
-                            <div class="bg-brand-50 dark:bg-brand-900/10 rounded-2xl p-6 border border-brand-100 dark:border-brand-900/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div class="bg-brand-50 dark:bg-brand-900/10 rounded-2xl p-6 border border-brand-100 dark:border-brand-900/30 flex flex-col sm:flex-row items-center justify-between gap-4 card-hover">
                                 <div>
                                     <h4 class="font-bold text-brand-900 dark:text-brand-100 mb-1">Ready to test your knowledge?</h4>
                                     <p class="text-sm text-brand-700 dark:text-brand-300">Take the quick quiz to earn XP and complete this lesson.</p>
@@ -104,7 +104,7 @@ window.LessonViewComponent = {
 
         const quizHtml = `
             <div class="p-0">
-                <div class="bg-gradient-to-r from-brand-600 to-indigo-600 p-6">
+                <div class="bg-gradient-to-r from-brand-600 to-teal-800 p-6">
                     <h3 class="text-2xl font-bold text-white mb-1">Knowledge Check 📝</h3>
                     <p class="text-brand-100 text-sm">Answer correctly to unlock the next lesson!</p>
                 </div>

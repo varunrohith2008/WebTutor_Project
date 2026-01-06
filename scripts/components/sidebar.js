@@ -44,7 +44,7 @@ window.SidebarComponent = {
             </div>
             
             <div class="mt-auto p-4 border-t border-slate-200 dark:border-dark-border">
-                <div class="bg-gradient-to-br from-brand-500 to-purple-600 rounded-xl p-4 text-white shadow-lg overflow-hidden relative group cursor-pointer" 
+                <div class="bg-gradient-to-br from-brand-500 to-emerald-800 rounded-xl p-4 text-white shadow-lg overflow-hidden relative group cursor-pointer card-hover" 
                     onclick="Utils.emit('navigate', {view: 'dashboard'})">
                     <div class="absolute top-0 right-0 w-16 h-16 bg-white opacity-10 rounded-full blur-xl transform translate-x-4 -translate-y-4 group-hover:scale-150 transition-transform duration-500"></div>
                     <h3 class="font-bold mb-1 relative z-10">Daily Challenge</h3>

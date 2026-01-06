@@ -47,10 +47,10 @@ window.App = {
             <div class="relative overflow-hidden">
                 <!-- Decorative Background -->
                 <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-                <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+                <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-lime-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
 
                 <div class="relative z-10 p-8 text-center">
-                    <div class="mx-auto w-20 h-20 bg-gradient-to-tr from-brand-400 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg mb-6 animate-scale-in">
+                    <div class="mx-auto w-20 h-20 bg-gradient-to-tr from-brand-400 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg mb-6 animate-scale-in">
                         <span class="text-4xl">🎓</span>
                     </div>
 
@@ -60,14 +60,14 @@ window.App = {
                     </p>
 
                     <div class="grid grid-cols-2 gap-4 mb-8 text-left max-w-sm mx-auto">
-                        <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-white/5">
+                        <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-white/5 card-hover">
                             <span class="text-xl">👩‍💻</span>
                             <div>
                                 <h4 class="font-bold text-slate-800 dark:text-white text-sm">Live Editor</h4>
                                 <p class="text-xs text-slate-500">Code in real-time</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-white/5">
+                        <div class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-white/5 card-hover">
                             <span class="text-xl">🏆</span>
                             <div>
                                 <h4 class="font-bold text-slate-800 dark:text-white text-sm">Gamified</h4>
